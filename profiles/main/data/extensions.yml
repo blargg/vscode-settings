@@ -1,0 +1,36 @@
+disabled: []
+enabled:
+  - id: Gruntfuggly.todo-tree
+    uuid: null
+  - id: ms-python.vscode-pylance
+    uuid: null
+  - id: arrterian.nix-env-selector
+    uuid: null
+  - id: bbenoist.Nix
+    uuid: null
+  - id: eamodio.gitlens
+    uuid: null
+  - id: esbenp.prettier-vscode
+    uuid: null
+  - id: gera2ld.markmap-vscode
+    uuid: null
+  - id: jnoortheen.nix-ide
+    uuid: null
+  - id: ms-python.python
+    uuid: null
+  - id: rust-lang.rust-analyzer
+    uuid: null
+  - id: streetsidesoftware.code-spell-checker
+    uuid: null
+  - id: tamasfe.even-better-toml
+    uuid: null
+  - id: vadimcn.vscode-lldb
+    uuid: null
+  - id: vscodevim.vim
+    uuid: null
+  - id: wayou.vscode-todo-highlight
+    uuid: null
+  - id: yzhang.markdown-all-in-one
+    uuid: null
+  - id: zokugun.cron-tasks
+    uuid: null
