@@ -147,4 +147,18 @@
     },
     "telemetry.telemetryLevel": "off",
     "gitlens.telemetry.enabled": false,
+    "editor.renderWhitespace": "all",
+    "files.associations": {
+        "*.hujson": "jsonc"
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "*.hujson"
+            ],
+            "schema": {
+                "allowTrailingCommas": true
+            }
+        }
+    ],
 }
