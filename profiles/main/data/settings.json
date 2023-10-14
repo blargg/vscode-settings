@@ -141,7 +141,7 @@
     "workbench.colorTheme": "Visual Studio Dark",
     "nix.serverPath": "nil",
     "nix.enableLanguageServer": true,
-    "nix.formatterPath": "nixpkgs-fmt",
+    "nix.formatterPath": "/run/current-system/sw/bin/nixpkgs-fmt",
     "[python]": {
         "editor.formatOnType": true
     },
@@ -161,4 +161,13 @@
             }
         }
     ],
+    "editor.renderLineHighlight": "all",
+    "editor.formatOnSave": true,
+    "nix.serverSettings": {
+        "nil": {
+            "formatting": {
+                "command": ["nixpkgs-fmt"]
+            }
+        }
+    },
 }
