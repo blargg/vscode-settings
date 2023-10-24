@@ -1,173 +1,108 @@
 {
-    "terminal.integrated.commandsToSkipShell": [
-        "language-julia.interrupt"
-    ],
-    "julia.symbolCacheDownload": true,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "julia.enableTelemetry": false,
-    "settingsSync.keybindingsPerPlatform": false,
-    "scm.defaultViewMode": "tree",
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                "<C-l>",
-            ],
-            "commands": [
-                "workbench.action.focusNextGroup",
-            ],
-        },
-        {
-            "before": [
-                "<space>",
-                "r",
-            ],
-            "commands": [
-                "workbench.action.openRecent",
-            ],
-        },
-        {
-            "before": [
-                "<C-h>",
-            ],
-            "commands": [
-                "workbench.action.focusPreviousGroup",
-            ],
-        },
-        {
-            "before": [
-                "<space>",
-                "w"
-            ],
-            "commands": [
-                "workbench.action.closeActiveEditor"
-            ],
-        },
-        {
-            "before": [
-                "<space>",
-                "i"
-            ],
-            "commands": [
-                "editor.action.quickFix"
-            ],
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "commands": [
-                "editor.action.showHover"
-            ],
-        },
-        {
-            "before": [
-                "<C-k>"
-            ],
-            "commands": [
-                "editor.action.showHover"
-            ],
-        },
-        {
-            "before": [
-                "<space>",
-                "f"
-            ],
-            "commands": [
-                "workbench.action.showAllEditorsByMostRecentlyUsed"
-            ],
-        },
-        {
-            "before": [
-                "]",
-                "g"
-            ],
-            "commands": [
-                "editor.action.marker.next"
-            ],
-        },
-        {
-            "before": [
-                "[",
-                "g"
-            ],
-            "commands": [
-                "editor.action.marker.prev"
-            ],
-        },
-        {
-            "before": [
-                "[",
-                "c"
-            ],
-            "when": "editorFocus && !isInDiffEditor",
-            "commands": [
-                "workbench.action.editor.previousChange",
-            ],
-        },
-        {
-            "before": [
-                "]",
-                "c"
-            ],
-            "when": "editorFocus && !isInDiffEditor",
-            "commands": [
-                "workbench.action.editor.nextChange",
-            ],
-        },
-    ],
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-    "rust-client.engine": "rust-analyzer",
-    "todo-tree.ripgrep.ripgrep": "/run/current-system/sw/bin/rg",
-    "markdown.experimental.validate.enabled": true,
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "g",
-                "q"
-            ],
-            "commands": [
-                "editor.action.formatSelection"
-            ],
-        },
-    
-    ],
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "julia.symbolCacheDownload": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "julia.enableTelemetry": false,
+  "settingsSync.keybindingsPerPlatform": false,
+  "scm.defaultViewMode": "tree",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusNextGroup"]
     },
-    "explorer.confirmDragAndDrop": false,
-    "editor.fontLigatures": false,
-    "catppuccin.accentColor": "sky",
-    "workbench.colorTheme": "Visual Studio Dark",
-    "nix.serverPath": "nil",
-    "nix.enableLanguageServer": true,
-    "nix.formatterPath": "/run/current-system/sw/bin/nixpkgs-fmt",
-    "[python]": {
-        "editor.formatOnType": true
+    {
+      "before": ["<space>", "r"],
+      "commands": ["workbench.action.openRecent"]
     },
-    "telemetry.telemetryLevel": "off",
-    "gitlens.telemetry.enabled": false,
-    "editor.renderWhitespace": "all",
-    "files.associations": {
-        "*.hujson": "jsonc"
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusPreviousGroup"]
     },
-    "json.schemas": [
-        {
-            "fileMatch": [
-                "*.hujson"
-            ],
-            "schema": {
-                "allowTrailingCommas": true
-            }
-        }
-    ],
-    "editor.renderLineHighlight": "all",
-    "editor.formatOnSave": true,
-    "nix.serverSettings": {
-        "nil": {
-            "formatting": {
-                "command": ["nixpkgs-fmt"]
-            }
-        }
+    {
+      "before": ["<space>", "w"],
+      "commands": ["workbench.action.closeActiveEditor"]
     },
+    {
+      "before": ["<space>", "i"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<space>", "f"],
+      "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"]
+    },
+    {
+      "before": ["]", "g"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "g"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["[", "c"],
+      "when": "editorFocus && !isInDiffEditor",
+      "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["]", "c"],
+      "when": "editorFocus && !isInDiffEditor",
+      "commands": ["workbench.action.editor.nextChange"]
+    }
+  ],
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "rust-client.engine": "rust-analyzer",
+  "todo-tree.ripgrep.ripgrep": "/run/current-system/sw/bin/rg",
+  "markdown.experimental.validate.enabled": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.formatSelection"]
+    }
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontLigatures": false,
+  "catppuccin.accentColor": "sky",
+  "workbench.colorTheme": "Visual Studio Dark",
+  "nix.serverPath": "nil",
+  "nix.enableLanguageServer": true,
+  "nix.formatterPath": "/run/current-system/sw/bin/nixpkgs-fmt",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false,
+  "editor.renderWhitespace": "all",
+  "files.associations": {
+    "*.hujson": "jsonc"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["*.hujson"],
+      "schema": {
+        "allowTrailingCommas": true
+      }
+    }
+  ],
+  "editor.renderLineHighlight": "all",
+  "editor.formatOnSave": true,
+  "nix.serverSettings": {
+    "nil": {
+      "formatting": {
+        "command": ["nixpkgs-fmt"]
+      }
+    }
+  },
+  "rust-analyzer.diagnostics.disabled": ["unresolved-proc-macro"]
 }
