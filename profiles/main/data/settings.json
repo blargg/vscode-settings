@@ -56,7 +56,23 @@
       "before": ["]", "c"],
       "when": "editorFocus && !isInDiffEditor",
       "commands": ["workbench.action.editor.nextChange"]
-    }
+    },
+    {
+      "before": ["<space>", "a", "g"],
+      "commands": ["continue.focusEdit"]
+    },
+    {
+      "before": ["<space>", "a", "y"],
+      "commands": ["continue.acceptDiff"]
+    },
+    {
+      "before": ["<space>", "a", "n"],
+      "commands": ["continue.rejectDiff"]
+    },
+    {
+      "before": ["<space>", "a", "d"],
+      "commands": ["continue.writeDocstringForCode"]
+    },
   ],
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
   "rust-client.engine": "rust-analyzer",
@@ -66,7 +82,27 @@
     {
       "before": ["g", "q"],
       "commands": ["editor.action.formatSelection"]
-    }
+    },
+    {
+      "before": ["<space>", "a", "g"],
+      "commands": ["continue.focusEdit"]
+    },
+    {
+      "before": ["<space>", "a", "y"],
+      "commands": ["continue.acceptDiff"]
+    },
+    {
+      "before": ["<space>", "a", "n"],
+      "commands": ["continue.rejectDiff"]
+    },
+    {
+      "before": ["<space>", "a", "c"],
+      "commands": ["continue.focusContinueInputWithoutClear"]
+    },
+    {
+      "before": ["<space>", "a", "d"],
+      "commands": ["continue.writeDocstringForCode"]
+    },
   ],
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -96,7 +132,6 @@
     }
   ],
   "editor.renderLineHighlight": "all",
-  "editor.formatOnSave": true,
   "nix.serverSettings": {
     "nil": {
       "formatting": {
@@ -104,5 +139,33 @@
       }
     }
   },
-  "rust-analyzer.diagnostics.disabled": ["unresolved-proc-macro"]
+  "rust-analyzer.diagnostics.disabled": ["unresolved-proc-macro"],
+  "search.useGlobalIgnoreFiles": true,
+  "cSpell.userWords": ["Jankauski", "tomjankauski"],
+  "editor.formatOnSave": true,
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "continue.telemetryEnabled": false,
+  "continue.enableTabAutocomplete": false,
+  "haskell.manageHLS": "GHCup",
+  "continue.pauseTabAutocompleteOnBattery": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C+i>"],
+      "commands": ["continue.focusEdit"]
+    },
+  ],
+  "python.analysis.typeCheckingMode": "standard",
+  "continue.enableQuickActions": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cronTasks.debug": false
 }

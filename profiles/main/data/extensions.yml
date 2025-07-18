@@ -1,5 +1,7 @@
 disabled: []
 enabled:
+  - id: Continue.continue
+    uuid: null
   - id: Gruntfuggly.todo-tree
     uuid: null
   - id: ms-python.vscode-pylance
@@ -14,13 +16,19 @@ enabled:
     uuid: null
   - id: gera2ld.markmap-vscode
     uuid: null
+  - id: haskell.haskell
+    uuid: null
   - id: jnoortheen.nix-ide
+    uuid: null
+  - id: justusadam.language-haskell
+    uuid: null
+  - id: matangover.mypy
+    uuid: null
+  - id: mkhl.direnv
     uuid: null
   - id: ms-python.python
     uuid: null
   - id: rust-lang.rust-analyzer
-    uuid: null
-  - id: streetsidesoftware.code-spell-checker
     uuid: null
   - id: tamasfe.even-better-toml
     uuid: null

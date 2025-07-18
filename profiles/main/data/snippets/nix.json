@@ -12,16 +12,39 @@
     // 	],
     // 	"description": "Log output to console"
     // }
-
     "module": {
         "prefix": "mod",
         "body": [
-            "{ ... }:",
+            "{ lib, config, ... }:",
+            "let",
+            "  cfg = config.settings.$1;",
+            "in",
             "{",
-            "   config = {",
-            "   };",
+            "  options = {",
+            "    settings.$1 = {",
+            "      enable = lib.mkEnableOption (lib.mdDoc ''",
+            "        $2",
+            "      '');",
+            "    };",
+            "  };",
+            "  config = lib.mkIf cfg.enable {",
+            "    $0",
+            "  };",
             "}",
         ],
         "description": "basic module"
     },
+    "options": {
+        "prefix": "options",
+        "body": [
+            "  options = {",
+            "    settings.$1 = {",
+            "      enable = lib.mkEnableOption (lib.mdDoc ''",
+            "        $2",
+            "      '');",
+            "    };",
+            "  };",
+        ],
+        "description": "add options to a module with basic enable set."
+    }
 }
